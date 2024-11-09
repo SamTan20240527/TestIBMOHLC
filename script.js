@@ -21,7 +21,7 @@ async function fetchData() {
 
 function renderChart(data) {
   const options = {
-    chart: { type: 'candlestick' },
+    chart: { type: 'candlestick', width: 100px, height: 200px },
     series: [{ name: 'IBM', data: data }],
     xaxis: { type: 'category' }
   };
